@@ -1,0 +1,22 @@
+@import "../libs/css/normalize.css";
+@import "../libs/css/fullpage.min.css";
+@import "./fonts.css";
+
+p {
+  font-family: "Risque";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  border: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
