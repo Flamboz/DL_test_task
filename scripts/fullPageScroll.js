@@ -1,6 +1,7 @@
 import "../libs/js/fullpage.min.js"
 
-const fullpageScroll = new fullpage("#fullpage", {
+new fullpage("#fullpage", {
+  responsiveWidth: 768,
   autoScrolling: true,
   scrollHorizontally: true,
 });
