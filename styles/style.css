@@ -1,22 +1,19 @@
 @import "../libs/css/normalize.css";
+@import "./default.css";
 @import "../libs/css/fullpage.min.css";
 @import "./fonts.css";
-
-p {
-  font-family: "Risque";
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+@import "./header.css";
+@import "./hero.css";
 
 .section {
-  width: 100vw;
-  height: 100vh;
-  background-color: aquamarine;
-  border: 5px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
+  min-height: 100vh;
+  padding: 50px;
+  background: #141429;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 20px;
+  }
 }

@@ -1,0 +1,167 @@
+.hero {
+  position: relative;
+}
+
+.hero__info {
+  padding: 150px 100px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero__title {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.hero__subtitle {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.hero__button {
+  display: block;
+  width: 185px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 20px 20px 20px 0px;
+  border: 1px solid #fff;
+  font-family: "Roboto";
+  color: inherit;
+  transition: 0.3s ease-in-out;
+}
+
+.hero__button:hover {
+  background-color: #fff;
+  color: #141429;
+}
+
+.hero__arrow {
+  position: absolute;
+  left: 150px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.hero__snowflake {
+  position: absolute;
+  bottom: 0;
+  left: -180px;
+  z-index: 0;
+}
+
+.hero__snowflake img {
+  width: 447px;
+  height: 448px;
+  color: lightgray 50%;
+  transform: rotate(-10deg);
+}
+
+.hero__santa {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  z-index: 0;
+}
+
+.hero__santa img {
+  height: auto;
+  width: auto;
+  max-width: 1000px;
+}
+
+.hero__cloud {
+  position: absolute;
+  top: 50%;
+  right: 550px;
+}
+
+.cloud__circle {
+  position: relative;
+  width: 220px;
+  height: 170px;
+  background: #fff;
+  border-radius: 110px / 85px;
+  filter: drop-shadow(4px 5px 15px rgba(255, 255, 255, 0.25));
+}
+
+.cloud__triangle {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 25px 100px 25px;
+  border-color: transparent transparent #fff transparent;
+  transform: rotate(58deg);
+  filter: drop-shadow(4px 5px 15px rgba(255, 255, 255, 0.25));
+}
+
+.cloud__text {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__santa img {
+    max-width: 750px;
+  }
+
+  .hero__cloud {
+    top: 55%;
+    right: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero__santa img {
+    max-width: 570px;
+  }
+
+  .hero__cloud {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero__title {
+    font-size: 52px;
+    margin-bottom: 13px;
+  }
+
+  .hero__subtitle {
+    font-size: 28px;
+    margin-bottom: 42px;
+  }
+
+  .hero__arrow,
+  .hero__snowflake {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero__santa img {
+    max-width: 100%;
+  }
+
+  .hero__button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 576px) {
+  .hero__button {
+    margin: 0 auto;
+  }
+}
