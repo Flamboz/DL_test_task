@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
   </head>
@@ -65,9 +69,89 @@
           </div>
         </div>
       </div>
-      <div class="section">2</div>
+      <div class="section presents">
+        <div class="presents__left">
+          <h2 class="presents__title">
+            At least somewhere you can feel new year atmosphere
+          </h2>
+          <p class="presents__subtitle">Choose your present:</p>
+          <div class="presents__options">
+            <button
+              data-swiper-id="0"
+              class="present__single-option present__single-option--sock active"
+            >
+              <img src="./src/images/new-year-sock.png" alt="" />
+            </button>
+            <button
+              data-swiper-id="1"
+              class="present__single-option present__single-option--hat"
+            >
+              <img src="./src/images/christmas-hat.png" alt="" />
+            </button>
+            <button
+              data-swiper-id="2"
+              class="present__single-option present__single-option--bag"
+            >
+              <img src="./src/images/new-year-bag.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="presents__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide__info">
+                  <h3 class="slide__title">Best sock ever</h3>
+                  <p class="slide__text">Reuglar sock have no present inside</p>
+                  <p class="slide__text">
+                    Lorem Ipsum is simply dumm y text of the printing and types
+                    etting industry. Lorem
+                  </p>
+                </div>
+                <div class="slide__img">
+                  <img
+                    src="./src/images/new-year-sock.png"
+                    alt="new year sock"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide__info">
+                  <h3 class="slide__title">Best hat ever</h3>
+                  <p class="slide__text">Reuglar sock have no present inside</p>
+                  <p class="slide__text">
+                    Lorem Ipsum is simply dumm y text of the printing and types
+                    etting industry. Lorem
+                  </p>
+                </div>
+                <div class="slide__img">
+                  <img
+                    src="./src/images/christmas-hat.png"
+                    alt="christmas hat"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide__info">
+                  <h3 class="slide__title">Best bag ever</h3>
+                  <p class="slide__text">Reuglar sock have no present inside</p>
+                  <p class="slide__text">
+                    Lorem Ipsum is simply dumm y text of the printing and types
+                    etting industry. Lorem
+                  </p>
+                </div>
+                <div class="slide__img">
+                  <img src="./src/images/new-year-bag.png" alt="new year bag" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

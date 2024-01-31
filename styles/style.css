@@ -17,3 +17,221 @@
     padding: 20px;
   }
 }
+
+.presents {
+  background: url("/src/images/presents_background.jpg") center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.presents__left {
+  width: 70%;
+}
+
+.presents__info {
+  width: 70%;
+}
+
+.presents__title {
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+
+.presents__subtitle {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.presents__options {
+  display: flex;
+}
+
+.present__single-option {
+  margin: 0 15px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 4px 10px 15px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.present__single-option.active {
+  background-color: transparent;
+}
+
+.present__single-option--sock img {
+  width: 69.65px;
+  height: 121.326px;
+}
+
+.present__single-option--hat img {
+  width: 123.572px;
+  height: 93.615px;
+}
+
+.present__single-option--bag img {
+  width: 95.113px;
+  height: 100.356px;
+}
+
+.presents__slider {
+  width: 30%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  padding: 40px;
+  font-size: 18px;
+  background: transparent;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  background: rgba(254, 250, 250, 0);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide__info {
+  width: 60%;
+}
+
+.slide__title {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.slide__text {
+  font-family: "Roboto";
+  font-size: 28px;
+}
+
+.slide__img {
+  width: 40%;
+  display: flex;
+  justify-content: right;
+}
+
+.slide__img img {
+  width: 80%;
+}
+
+@media screen and (max-width: 1440px) {
+  .presents__left {
+    width: 60%;
+    margin-right: 0;
+  }
+  
+  .presents__slider {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .presents {
+    padding: 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .presents__left {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .presents__options {
+    justify-content: center;
+  }
+
+  .presents__slider {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    padding: 20px;
+  }
+
+  .slide__img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .presents {
+    gap: 30px;
+  }
+
+  .presents__title {
+    font-size: 52px;
+  }
+
+  .presents__subtitle {
+    font-size: 28px;
+  }
+
+  .present__single-option {
+    width: 110px;
+    height: 110px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .present__single-option--sock img {
+    width: 51.637px;
+    height: 89.948px;
+  }
+
+  .present__single-option--hat img {
+    width: 91.614px;
+    height: 69.405px;
+  }
+
+  .present__single-option--bag img {
+    width: 70.515px;
+    height: 74.402px;
+  }
+
+  .swiper-slide {
+    border: unset;
+    flex-direction: column-reverse;
+  }
+
+  .slide__info {
+    width: 100%;
+  }
+
+  .slide__img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 456px) {
+  .present__single-option {
+    width: 90px;
+    height: 90px;
+  }
+
+  .present__single-option--sock img {
+    width: 50px;
+    height: 70px;
+  }
+
+  .present__single-option--hat img {
+    width: 60px;
+    height: 50px;
+  }
+
+  .present__single-option--bag img {
+    width: 50px;
+    height: 60px;
+  }
+}
