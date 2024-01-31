@@ -1,33 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const fullPageSwiper = new Swiper("#page-slider", {
-    direction: "vertical",
-    slidesPerView: 1,
-    mousewheel: true,
-  });
-
   const presentSwiper = new Swiper("#presents__slider", {
     clickable: true,
     spaceBetween: 30,
     loop: true,
   });
 
-  const buttons = document.querySelectorAll(".present__single-option");
+  const presentsOptions = document.querySelector(".presents__options");
 
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
+  presentsOptions.addEventListener("click", function (event) {
+    const clickedButton = event.target.closest(".present__single-option");
+
+    if (clickedButton) {
+      const buttons = document.querySelectorAll(".present__single-option");
+
       buttons.forEach(function (btn) {
         btn.classList.remove("active");
       });
 
-      button.classList.add("active");
+      clickedButton.classList.add("active");
 
-      const swiperId = button.getAttribute("data-swiper-id");
+      const swiperId = clickedButton.getAttribute("data-swiper-id");
       presentSwiper.slideTo(swiperId);
-    });
+    }
   });
 
   presentSwiper.on("slideChange", function (swiper) {
     const activeIndex = swiper.realIndex;
+    const buttons = document.querySelectorAll(".present__single-option");
+
     buttons.forEach(function (btn) {
       btn.classList.remove("active");
     });

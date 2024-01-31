@@ -1,4 +1,4 @@
-import "./swiper.js";
+import "./presents-slider.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".header__burger");
@@ -8,4 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.classList.toggle("open");
     menu.classList.toggle("visible");
   });
+});
+
+new Swiper("#page-slider", {
+  direction: "vertical",
+  slidesPerView: 1,
+  mousewheel: true,
 });
