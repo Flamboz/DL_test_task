@@ -1,0 +1,111 @@
+.contact {
+  background: url("../src/images/contact_background.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.contact__inner {
+  width: 100%;
+  max-width: 468px;
+}
+
+.contact__title {
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+
+.contact__form {
+  font-family: "Roboto";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  color: #fff;
+}
+
+.form__input,
+.form__textarea {
+  border: 3px solid #fff;
+  border-radius: 15px;
+  background: transparent;
+  padding: 15px;
+  color: #fff;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #fff;
+}
+
+.form__input {
+  width: 47%;
+}
+
+.form__textarea {
+  width: 98.5%;
+  min-height: 75px;
+  resize: none;
+}
+
+.form__checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  color: #d02b2b;
+}
+
+.form__checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #d02b2b;
+}
+
+.form__checkbox-container input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form__checkbox-container .checkmark:after {
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid #d02b2b;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 576px) {
+  .contact__title {
+    font-size: 52px;
+    margin-bottom: 25px;
+  }
+  
+
+  .form__input {
+    width: 100%;
+  }
+}
