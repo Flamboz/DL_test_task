@@ -20,7 +20,6 @@ body {
   color: #fff;
 }
 
-
 .section {
   min-height: 100vh;
   padding: 50px;
@@ -31,4 +30,9 @@ body {
   .section {
     padding: 20px;
   }
+}
+
+.page-slider.swiper-container {
+  height: 100vh;
+  overflow: hidden;
 }

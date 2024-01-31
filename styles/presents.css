@@ -57,7 +57,7 @@
   height: 100.356px;
 }
 
-.presents__slider {
+.presents__right {
   width: 30%;
 }
 
@@ -67,7 +67,7 @@
   overflow: hidden;
 }
 
-.swiper-slide {
+.presents__slider .swiper-slide {
   padding: 40px;
   font-size: 18px;
   background: transparent;
@@ -110,7 +110,7 @@
     margin-right: 0;
   }
   
-  .presents__slider {
+  .presents__right {
     width: 40%;
   }
 }
@@ -131,11 +131,11 @@
     justify-content: center;
   }
 
-  .presents__slider {
+  .presents__right {
     width: 100%;
   }
 
-  .swiper-slide {
+  .presents__slider .swiper-slide {
     padding: 20px;
   }
 
@@ -179,7 +179,7 @@
     height: 74.402px;
   }
 
-  .swiper-slide {
+  .presents__slider .swiper-slide {
     border: unset;
     flex-direction: column-reverse;
   }
