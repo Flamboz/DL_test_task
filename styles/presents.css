@@ -67,7 +67,13 @@
   overflow: hidden;
 }
 
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
 .presents__slider .swiper-slide {
+  height: auto;
   padding: 40px;
   font-size: 18px;
   background: transparent;
