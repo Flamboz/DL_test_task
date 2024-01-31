@@ -19,3 +19,16 @@ body {
   font-family: "Risque";
   color: #fff;
 }
+
+
+.section {
+  min-height: 100vh;
+  padding: 50px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 20px;
+  }
+}
