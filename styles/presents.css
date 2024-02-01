@@ -115,7 +115,7 @@
     width: 60%;
     margin-right: 0;
   }
-  
+
   .presents__right {
     width: 40%;
   }
@@ -137,7 +137,8 @@
     justify-content: center;
   }
 
-  .presents__right {
+  .presents__right,
+  .presents__info {
     width: 100%;
   }
 
@@ -197,6 +198,12 @@
   .slide__img {
     width: 50%;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    height: auto !important;
   }
 }
 
