@@ -27,7 +27,43 @@
 
 .header__menu-list li {
   margin: 0 30px;
+}
+
+.menu-list__item {
+  transition: .3s linear;
+}
+
+.menu-list__item .white {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  transition: .3s ease;
+}
+
+.menu-list__item .red {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  color: #d02b2b;
+  transition: .3s ease;
+}
+
+.menu-list__link {
+  display: block;
+  position: relative;
+  line-height: 1;
+  color: transparent;
+  overflow: hidden;
   cursor: pointer;
+}
+
+.menu-list__link:hover .white{
+  top: -100%;
+}
+
+.menu-list__link:hover .red{
+  top: 0;
 }
 
 .header__burger {
