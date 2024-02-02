@@ -1,5 +1,5 @@
-const total = 40;
-const warp = document.querySelector(".hero");
+const total = 30;
+const section = document.querySelector(".hero");
 const w = window.innerWidth;
 const h = window.innerHeight;
 
@@ -22,36 +22,36 @@ for (let i = 0; i < total; i++) {
   gsap.set(div1, {
     attr: { class: "small-snowflake" },
     x: randomNum(0, w),
-    y: -h,
-    scale: randomNum(0.5, 1)
+    y: -randomNum(0, h),
+    scale: randomNum(0.5, 1),
   });
 
   gsap.set(div2, {
     attr: { class: "small-snowflake" },
     x: randomNum(0, w),
-    y: -h,
-    scale: randomNum(0.5, 1)
+    y: -randomNum(0, h),
+    scale: randomNum(0.5, 1),
   });
 
-  warp.appendChild(div1);
-  warp.appendChild(div2);
+  section.appendChild(div1);
+  section.appendChild(div2);
 
-  anim(div1);
-  anim(div2);
+  animate(div1);
+  animate(div2);
 }
 
-function anim(elm) {
+function animate(elm) {
   gsap.to(elm, {
-    duration: randomNum(30, 50),
-    y: h + 100,
+    duration: randomNum(30, 70),
+    y: h,
     ease: "linear",
     repeat: -1,
-    delay: -36,
+    // delay: Math.random() * 10,
   });
 
   gsap.to(elm, {
     duration: randomNum(10, 15),
-    x: "+=100",
+    x: `+=${randomNum(50, 100)}`,
     repeat: -1,
     yoyo: true,
     ease: "sine.inOut",

@@ -2,12 +2,14 @@
   width: 15px;
   height: 15px;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .small-snowflake svg {
   width: 100%;
   height: 100%;
-  fill: #FCF9BF;
+  fill: #fcf9bf;
 }
 
 .small-snowflake circle {
