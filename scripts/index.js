@@ -1,5 +1,6 @@
 import "./presents-slider.js";
 import "./snow-animation.js";
+import "./header.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper("#page-slider", {
