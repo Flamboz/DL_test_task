@@ -72,18 +72,20 @@
   bottom: -5px;
   right: 0;
   z-index: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
 }
 
 .hero__santa img {
-  height: auto;
-  width: auto;
-  max-width: 1000px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .hero__cloud {
   position: absolute;
-  top: 50%;
-  right: 550px;
+  top: 28%;
+  right: 68%;
 }
 
 .cloud__circle {
@@ -118,21 +120,12 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .hero__santa img {
-    max-width: 750px;
-  }
-
   .hero__cloud {
-    top: 55%;
-    right: 450px;
+    top: 25%;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .hero__santa img {
-    max-width: 570px;
-  }
-
   .hero__cloud {
     display: none;
   }
@@ -158,13 +151,13 @@
   .hero__snowflake {
     display: none;
   }
+
+  .hero__santa {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .hero__santa img {
-    max-width: 100%;
-  }
-
   .hero__button {
     margin: 0 auto;
   }
