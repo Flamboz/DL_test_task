@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".header__burger");
   const lines = document.querySelectorAll(".header__burger span");
   const sidebar = document.querySelector(".sidebar");
-  const circle = document.querySelector("#bg-circle");
+  const circle = document.querySelector(".bg-circle");
 
   const linesAnimationTimeline = gsap
     .timeline({ paused: true })
@@ -18,11 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
       0
     );
 
-  const sidebarAnimationTimeline = gsap.timeline({ paused: true }).to(sidebar, {
-    right: 0,
-    duration: 0.6,
-    ease: "power1.inOut",
-  });
+  const sidebarAnimationTimeline = gsap
+    .timeline({ paused: true })
+    .to(sidebar, { right: 0, duration: 0.6, ease: "power2.inOut" });
 
   const getVpdr = () => {
     const vph = Math.pow(document.documentElement.offsetHeight, 2);
@@ -32,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const updateNavbarScale = (scale) => {
-    gsap.to(circle, 0.1, { scale, ease: "power1.inOut" });
+    gsap.to(circle, 0.1, { scale, ease: "power2.inOut" });
   };
 
   let isActive = false;
-  let isMobile = this.documentElement.offsetWidth <= 768;
+  let isMobile = document.documentElement.offsetWidth <= 768;
 
   const openNavbar = () => {
     updateNavbarScale(isMobile ? getVpdr() * 2 : getVpdr());
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       sidebar.style.width = `${((circle.clientWidth * getVpdr()) / 2) * 0.8}px`;
       sidebar.style.height = `${Math.min(
         (circle.clientWidth * getVpdr()) / 2,
-        this.documentElement.offsetHeight
+        document.documentElement.offsetHeight
       )}px`;
     }
 
