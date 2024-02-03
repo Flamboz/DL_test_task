@@ -137,7 +137,13 @@
 }
 
 .sidemenu__link {
+  display: block;
   color: inherit;
+  transition: 0.2s ease;
+}
+
+.sidemenu__link:hover {
+  transform: scale(1.2);
 }
 
 .bg-circle {
