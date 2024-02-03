@@ -162,9 +162,3 @@
     margin: 0 auto;
   }
 }
-
-@media screen and (min-width: 300px) and (max-width: 576px) {
-  .hero__button {
-    margin: 0 auto;
-  }
-}
