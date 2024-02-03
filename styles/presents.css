@@ -201,10 +201,13 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .swiper-slide {
-    height: auto !important;
-  }
+.disable-slider .page-slider {
+  height: auto;
+  overflow: auto;
+}
+
+.disable-slider .page-slider > .swiper-wrapper {
+  flex-direction: column;
 }
 
 @media screen and (min-width: 300px) and (max-width: 456px) {
