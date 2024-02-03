@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   burger.addEventListener("click", () => {
     isActive = !isActive;
+    console.log(isMobile);
 
     if (isMobile) {
       sidebar.style.width = `100vw`;
@@ -53,7 +54,12 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       sidebar.style.width = `${((circle.clientWidth * getVpdr()) / 2) * 0.8}px`;
       sidebar.style.height = `${Math.min(
-        (circle.clientWidth * getVpdr()) / 2,
+        (circle.clientWidth *
+          getVpdr() *
+          ((circle.clientWidth * getVpdr()) /
+            2 /
+            this.documentElement.offsetHeight)) /
+          2,
         document.documentElement.offsetHeight
       )}px`;
     }
