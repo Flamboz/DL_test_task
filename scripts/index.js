@@ -38,4 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1,
     delay: 3,
   });
+
+  gsap.set(".hero__arrow", { transformOrigin: "50% 50%" });
+  gsap.to(".hero__arrow", {
+    duration: 0.6,
+    y: 8,
+    ease: "power1.inOut",
+    repeat: -1,
+    yoyo: true,
+  });
 });
