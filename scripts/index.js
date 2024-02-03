@@ -29,4 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     document.body.classList.add("disable-slider");
   }
+
+  gsap.set(".hero__cloud", { opacity: 0, y: 20 });
+  gsap.to(".hero__cloud", {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    delay: 3,
+  });
 });
