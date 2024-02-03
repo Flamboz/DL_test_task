@@ -1,6 +1,7 @@
 import "./presents-slider.js";
 import "./snow-animation.js";
 import "./header.js";
+import "./custom-dropdown.js";
 
 const checkIsMobile = () => {
   let check = false;
