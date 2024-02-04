@@ -1,5 +1,5 @@
 import "./presents-slider.js";
-// import "./snow-animation.js";
+import "./snow-animation.js";
 import "./header.js";
 import "./custom-dropdown.js";
 import "./adjustTextareaHeight.js";
