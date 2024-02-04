@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .timeline({ paused: true })
     .to(sidebar, { right: 0, duration: 0.6, ease: "power2.inOut" });
 
-  const getVpdr = () => {
-    const vph = Math.pow(document.documentElement.offsetHeight, 2);
-    const vpw = Math.pow(document.documentElement.offsetWidth, 2);
-    const vpd = Math.sqrt(vph + vpw);
-    return vpd / circle.clientWidth;
+  const calculateViewportDistanceRatio = () => {
+    const viewportHeight = Math.pow(document.documentElement.offsetHeight, 2);
+    const viewportWidth = Math.pow(document.documentElement.offsetWidth, 2);
+    const viewportDiagonal = Math.sqrt(viewportHeight + viewportWidth);
+    return viewportDiagonal / circle.clientWidth;
   };
 
   const updateNavbarScale = (scale) => {
@@ -37,7 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let isMobile = document.documentElement.offsetWidth <= 768;
 
   const openNavbar = () => {
-    updateNavbarScale(isMobile ? getVpdr() * 2 : getVpdr());
+    updateNavbarScale(
+      isMobile
+        ? calculateViewportDistanceRatio() * 2
+        : calculateViewportDistanceRatio()
+    );
   };
 
   const closeNavbar = () => {
@@ -51,11 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
       sidebar.style.width = `100vw`;
       sidebar.style.height = `100vh`;
     } else {
-      sidebar.style.width = `${((circle.clientWidth * getVpdr()) / 2) * 0.8}px`;
+      sidebar.style.width = `${
+        ((circle.clientWidth * calculateViewportDistanceRatio()) / 2) * 0.8
+      }px`;
       sidebar.style.height = `${Math.min(
         (circle.clientWidth *
-          getVpdr() *
-          ((circle.clientWidth * getVpdr()) /
+          calculateViewportDistanceRatio() *
+          ((circle.clientWidth * calculateViewportDistanceRatio()) /
             2 /
             this.documentElement.offsetHeight)) /
           2,
