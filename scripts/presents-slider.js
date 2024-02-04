@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const presentSwiper = new Swiper("#presents__slider", {
+  const presentSwiper = new Swiper(".presents__slider", {
     clickable: true,
     spaceBetween: 30,
     loop: true,

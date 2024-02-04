@@ -44,7 +44,8 @@
 .form__textarea {
   width: 98.5%;
   min-height: 75px;
-  resize: none;
+  max-height: 200px;
+  resize: vertical;
 }
 
 .form__checkbox-container {
@@ -81,18 +82,19 @@
 .checkmark:after {
   content: "";
   position: absolute;
-  display: none;
+  opacity: 0;
+  transition: 0.2s ease;
 }
 
 .form__checkbox-container input:checked ~ .checkmark:after {
-  display: block;
+  opacity: 1;
 }
 
 .form__checkbox-container .checkmark:after {
   left: 5px;
-  top: 0px;
-  width: 5px;
-  height: 10px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
   border: solid #d02b2b;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
@@ -103,7 +105,6 @@
     font-size: 52px;
     margin-bottom: 25px;
   }
-  
 
   .form__input {
     width: 100%;

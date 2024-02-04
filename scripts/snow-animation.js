@@ -1,4 +1,6 @@
-const total = 30;
+import { checkIsMobile } from "./checkIsMobile.js";
+
+const total = checkIsMobile() ? 15 : 30;
 const section = document.querySelector(".hero");
 const w = window.innerWidth;
 const h = window.innerHeight;
@@ -46,7 +48,6 @@ function animate(elm) {
     y: h,
     ease: "linear",
     repeat: -1,
-    // delay: Math.random() * 10,
   });
 
   gsap.to(elm, {

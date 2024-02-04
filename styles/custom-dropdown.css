@@ -74,3 +74,10 @@
 .dropdown__list-item:hover {
   color: #d02b2b;
 }
+
+
+@media screen and (max-width: 576px) {
+  .dropdown {
+    width: 100%;
+  }
+}

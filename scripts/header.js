@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   burger.addEventListener("click", () => {
     isActive = !isActive;
-    console.log(isMobile);
 
     if (isMobile) {
       sidebar.style.width = `100vw`;
@@ -74,4 +73,19 @@ document.addEventListener("DOMContentLoaded", function () {
       closeNavbar();
     }
   });
+  window.addEventListener("scroll", handleScroll);
 });
+
+export const handleUpdateHeaderBgOnScroll = (isScrolled) => {
+  const header = document.querySelector(".header");
+  if (isScrolled) {
+    header.style.background = "rgba(0,0,0,0.7)";
+  } else {
+    header.style.background = "transparent";
+  }
+};
+
+const handleScroll = () => {
+  const header = document.querySelector(".header");
+  handleUpdateHeaderBgOnScroll(window.scrollY > header.clientHeight / 2);
+};

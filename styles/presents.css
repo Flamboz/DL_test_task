@@ -36,6 +36,8 @@
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 4px 10px 15px 0px rgba(0, 0, 0, 0.25) inset;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .present__single-option.active {
@@ -84,6 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: grab;
 }
 
 .slide__info {
@@ -169,6 +172,10 @@
     height: 110px;
     margin-right: 8px;
     margin-left: 8px;
+  }
+
+  .slide__img--sock {
+    margin-right: 35px;
   }
 
   .present__single-option--sock img {
