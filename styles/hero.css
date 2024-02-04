@@ -70,9 +70,9 @@
 
 .hero__santa {
   position: absolute;
-  bottom: -5px;
+  bottom: 0;
   right: 0;
-  z-index: 0;
+  z-index: 2;
   display: flex;
   justify-content: flex-end;
   width: 60%;
@@ -118,6 +118,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000;
+}
+
+.hero__star {
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1360px) {
+  .hero__santa {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 1200px) {

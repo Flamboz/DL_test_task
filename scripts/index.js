@@ -3,6 +3,7 @@ import "./snow-animation.js";
 import "./header.js";
 import "./custom-dropdown.js";
 import "./adjustTextareaHeight.js";
+import "./hero-stars.js";
 import { checkIsMobile } from "./checkIsMobile.js";
 import { handleUpdateHeaderBgOnScroll } from "./header.js";
 

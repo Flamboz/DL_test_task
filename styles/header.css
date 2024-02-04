@@ -76,7 +76,7 @@
   position: absolute;
   top: 50%;
   right: 40px;
-  z-index: 10;
+  z-index: 999;
   width: 60px;
   height: 60px;
   display: flex;
@@ -121,7 +121,7 @@
   position: absolute;
   top: 0;
   right: -100%;
-  z-index: 2;
+  z-index: 99;
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -134,6 +134,7 @@
 .sidemenu__list {
   text-align: center;
   list-style: none;
+  text-decoration: none;
 }
 
 .sidemenu__list-item {

@@ -21,6 +21,10 @@ body {
   overflow: hidden;
 }
 
+.disable-slider {
+  overflow: unset;
+}
+
 .section {
   min-height: 100vh;
   padding: 50px;
