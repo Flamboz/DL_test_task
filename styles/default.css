@@ -41,3 +41,23 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+.big-snowflake {
+  position: absolute;
+  bottom: -35px;
+  left: -190px;
+  z-index: 1;
+}
+
+.big-snowflake img {
+  width: 447px;
+  height: 448px;
+  transform: rotate(-10deg);
+  animation: rotateSnowflake 70s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .big-snowflake {
+    display: none;
+  }
+}

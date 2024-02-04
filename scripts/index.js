@@ -1,5 +1,5 @@
 import "./presents-slider.js";
-import "./snow-animation.js";
+// import "./snow-animation.js";
 import "./header.js";
 import "./custom-dropdown.js";
 import "./adjustTextareaHeight.js";
@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
       on: {
         slideChange: (props) => {
           handleUpdateHeaderBgOnScroll(props.activeIndex > 0);
+
+          if (props.activeIndex === 1) {
+            animateSnowflake(300);
+          } else if (props.activeIndex === 0) {
+            animateSnowflake(0);
+          }
         },
       },
     });
@@ -49,4 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
     repeat: -1,
     yoyo: true,
   });
+
+  const bigSnowflake = document.querySelector(".big-snowflake");
+  const animateSnowflake = (targetY) => {
+    gsap.to(bigSnowflake, {
+      duration: 3,
+      y: targetY,
+      ease: "power1.inOut",
+    });
+  };
 });

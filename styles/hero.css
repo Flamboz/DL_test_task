@@ -45,20 +45,6 @@
   cursor: pointer;
 }
 
-.hero__snowflake {
-  position: absolute;
-  bottom: 0;
-  left: -190px;
-  z-index: 0;
-}
-
-.hero__snowflake img {
-  width: 447px;
-  height: 448px;
-  transform: rotate(-10deg);
-  animation: rotateSnowflake 70s linear infinite;
-}
-
 @keyframes rotateSnowflake {
   from {
     transform: rotate(0deg);
