@@ -11,9 +11,9 @@
   height: 100%;
   background: transparent;
   padding: 15px;
-  border: 3px solid #fff;
+  border: 3px solid var(--primary-color);
   border-radius: 15px;
-  color: #fff;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -24,8 +24,8 @@
   right: 15px;
   width: 10px;
   height: 10px;
-  border-left: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-left: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
   transform: translateY(-45%) rotate(-45deg);
   pointer-events: none;
   transition: 0.2s ease;
@@ -43,10 +43,10 @@
   top: 0;
   z-index: 0;
   width: 100%;
-  border: 3px solid #fff;
+  border: 3px solid var(--primary-color);
   opacity: 0;
   border-radius: 15px;
-  background: #fff;
+  background: var(--primary-color);
   overflow: hidden;
   visibility: hidden;
   transition: 0.2s ease;
@@ -72,9 +72,8 @@
 }
 
 .dropdown__list-item:hover {
-  color: #d02b2b;
+  color: var(--secondary-color);
 }
-
 
 @media screen and (max-width: 576px) {
   .dropdown {

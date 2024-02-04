@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: #141429;
+  background: var(--hero-primary-color);
 }
 
 .hero__info {
@@ -26,15 +26,15 @@
   text-align: center;
   line-height: 44px;
   border-radius: 20px 20px 20px 0px;
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-color);
   font-family: var(--font-roboto);
   color: inherit;
   transition: 0.3s ease-in-out;
 }
 
 .hero__button:hover {
-  background-color: #fff;
-  color: #141429;
+  background-color: var(--primary-color);
+  color: var(--hero-primary-color);
 }
 
 .hero__arrow {
@@ -93,7 +93,7 @@
   position: relative;
   width: 220px;
   height: 170px;
-  background: #fff;
+  background: var(--primary-color);
   border-radius: 110px / 85px;
   filter: drop-shadow(4px 5px 15px rgba(255, 255, 255, 0.25));
 }
@@ -106,7 +106,7 @@
   height: 0px;
   border-style: solid;
   border-width: 0 25px 100px 25px;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent var(--primary-color) transparent;
   transform: rotate(58deg);
   filter: drop-shadow(4px 5px 15px rgba(255, 255, 255, 0.25));
 }

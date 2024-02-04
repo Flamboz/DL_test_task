@@ -7,4 +7,7 @@
 
   --font-risque-src: url("../fonts/Risque-Regular.woff") format("woff"),
     url("../fonts/Risque-Regular.ttf") format("truetype");
+  --primary-color: #fff;
+  --secondary-color: #d02b2b;
+  --hero-primary-color: #141429;
 }
