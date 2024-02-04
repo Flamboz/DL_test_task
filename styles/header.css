@@ -19,12 +19,12 @@
   display: flex;
   align-items: center;
   margin-right: 80px;
+  font-family: var(--font-roboto);
 }
 
 .header__menu-list {
   list-style: none;
   display: flex;
-  font-family: "Roboto";
 }
 
 .header__menu-list li {
@@ -124,7 +124,6 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "Risque";
   font-size: 32px;
 }
 

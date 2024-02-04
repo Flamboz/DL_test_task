@@ -1,0 +1,10 @@
+:root {
+  --font-roboto: "Roboto";
+  --font-risque: "Risque";
+
+  --font-roboto-src: url("../fonts/Risque-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
+
+  --font-risque-src: url("../fonts/Risque-Regular.woff") format("woff"),
+    url("../fonts/Risque-Regular.ttf") format("truetype");
+}

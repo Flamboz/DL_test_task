@@ -16,7 +16,7 @@ ul {
 }
 
 body {
-  font-family: "Risque";
+  font-family: var(--font-risque);
   color: #fff;
 }
 

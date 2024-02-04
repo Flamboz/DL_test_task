@@ -27,7 +27,7 @@
   line-height: 44px;
   border-radius: 20px 20px 20px 0px;
   border: 1px solid #fff;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   color: inherit;
   transition: 0.3s ease-in-out;
 }

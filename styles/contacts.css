@@ -16,7 +16,7 @@
 }
 
 .contact__form {
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   display: flex;
   flex-wrap: wrap;
   gap: 25px;

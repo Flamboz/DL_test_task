@@ -103,7 +103,7 @@
 }
 
 .slide__text {
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-size: 28px;
 }
 
