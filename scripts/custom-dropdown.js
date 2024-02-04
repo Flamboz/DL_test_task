@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector(".dropdown");
+  const dropdownList = dropdown.querySelector(".dropdown__list");
 
-  function toggleDropdown() {
+  const toggleDropdown = () => {
     const dropdownBtn = dropdown.querySelector(".dropdown__button");
-    const dropdownList = dropdown.querySelector(".dropdown__list");
     dropdownList.classList.toggle("dropdown__list--visible");
     dropdownBtn.classList.toggle("dropdown__button--active");
-  }
+  };
 
-  function handleListItemClick(e) {
+  const handleListItemClick = (e) => {
     const dropdownBtn = dropdown.querySelector(".dropdown__button");
     const dropdownItems = dropdown.querySelectorAll(".dropdown__list-item");
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     e.target.classList.add("dropdown__list-item--active");
     dropdownBtn.innerText = e.target.innerText;
-  }
+  };
 
   dropdown.addEventListener("click", function (e) {
     if (e.target === dropdown.querySelector(".dropdown__button")) {
@@ -31,9 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Tab" || e.key === "Escape") {
-      toggleDropdown();
-    }
+  document.addEventListener("click", () => {
+    dropdownList.classList.remove("dropdown__list--visible");
+  });
+
+  dropdown.addEventListener("click", (e) => {
+    e.stopPropagation();
   });
 });
