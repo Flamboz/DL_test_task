@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
 export const handleUpdateHeaderBgOnScroll = (isScrolled) => {
   const header = document.querySelector(".header");
   if (isScrolled) {
-    header.style.background = "rgba(0,0,0,0.7)";
+    header.classList.add("header-scrolled");
   } else {
-    header.style.background = "transparent";
+    header.classList.remove("header-scrolled");
   }
 };
 
