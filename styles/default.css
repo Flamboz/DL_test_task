@@ -61,8 +61,20 @@ a {
   animation: rotateSnowflake 70s linear infinite;
 }
 
+.arrow {
+  position: absolute;
+  left: 150px;
+  bottom: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .big-snowflake {
+    display: none;
+  }
+
+  .arrow {
     display: none;
   }
 }

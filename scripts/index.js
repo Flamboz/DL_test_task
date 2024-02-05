@@ -9,9 +9,9 @@ import { handleUpdateHeaderBgOnScroll } from "./header.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   initSnowAnimation();
-  initStarsAnimation()
+  initStarsAnimation();
 
-  const arrowToSecondSlide = document.querySelector(".hero__arrow");
+  const arrowToSecondSlide = document.querySelector(".arrow");
   let pageSlider;
 
   arrowToSecondSlide.addEventListener("click", () => {
