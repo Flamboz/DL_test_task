@@ -1,5 +1,6 @@
 .presents {
   background: url("../src/images/presents_background.jpg") center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
