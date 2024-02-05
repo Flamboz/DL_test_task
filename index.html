@@ -25,7 +25,11 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img src="./src/images/logo-white.png" alt="Coca Cola logo" />
+        <picture>
+          <source srcset="/src/images/logo-white.webp" type="image/webp" />
+          <source srcset="/src/images/logo-white.png" type="image/png" />
+          <img src="/src/images/logo-white.png" alt="logo"/>
+        </picture>
       </div>
       <nav class="header__menu">
         <ul class="header__menu-list">
@@ -89,20 +93,28 @@
     <div id="page-slider" class="page-slider swiper-container">
       <div class="swiper-wrapper">
         <div class="big-snowflake">
-          <img src="./src/images/big-snowflake.png" alt="snowflake" />
+          <picture>
+            <source srcset="/src/images/big-snowflake.webp" type="image/webp" />
+            <source srcset="/src/images/big-snowflake.png" type="image/png" />
+            <img src="/src/images/big-snowflake.png" alt="big snowflake rotating"/>
+          </picture>
         </div>
         <div class="swiper-slide">
           <div class="section hero">
             <div class="hero__info">
               <h1 class="hero__title">Main Site Title</h1>
               <p class="hero__subtitle">Lorem ipsum descripsum</p>
-              <a class="hero__button">Call to action</a>
+              <a class="hero__button" href="#">Call to action</a>
             </div>
             <div class="hero__arrow">
               <img src="./src/icons/arrow.svg" alt="arrow down" />
             </div>
             <div class="hero__santa">
-              <img src="./src/images/santa.png" alt="santa" />
+              <picture>
+                <source srcset="/src/images/santa.webp" type="image/webp" />
+                <source srcset="/src/images/santa.png" type="image/png" />
+                <img src="/src/images/santa.png" alt="santa"/>
+              </picture>
               <div class="hero__cloud">
                 <div class="cloud__circle">
                   <div class="cloud__triangle"></div>
@@ -129,21 +141,51 @@
                   aria-label="present sock option"
                   class="present__single-option present__single-option--sock active"
                 >
-                  <img src="./src/images/new-year-sock.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="/src/images/new-year-sock.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="/src/images/new-year-sock.png"
+                      type="image/png"
+                    />
+                    <img src="/src/images/new-year-sock.png" alt="new year sock option" />
+                  </picture>
                 </button>
                 <button
                   data-swiper-id="1"
                   aria-label="present hat option"
                   class="present__single-option present__single-option--hat"
                 >
-                  <img src="./src/images/christmas-hat.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="/src/images/christmas-hat.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="/src/images/christmas-hat.png"
+                      type="image/png"
+                    />
+                    <img src="/src/images/christmas-hat.png" alt="christmas hat option"/>
+                  </picture>
                 </button>
                 <button
                   data-swiper-id="2"
                   aria-label="present bag option"
                   class="present__single-option present__single-option--bag"
                 >
-                  <img src="./src/images/new-year-bag.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="/src/images/new-year-bag.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="/src/images/new-year-bag.png"
+                      type="image/png"
+                    />
+                    <img src="/src/images/new-year-bag.png" alt="new year bag option"/>
+                  </picture>
                 </button>
               </div>
             </div>
@@ -162,10 +204,17 @@
                       </p>
                     </div>
                     <div class="slide__img slide__img--sock">
-                      <img
-                        src="./src/images/new-year-sock.png"
-                        alt="new year sock"
-                      />
+                      <picture>
+                        <source
+                          srcset="/src/images/new-year-sock.webp"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="/src/images/new-year-sock.png"
+                          type="image/png"
+                        />
+                        <img src="/src/images/new-year-sock.png" alt="new year sock information" />
+                      </picture>
                     </div>
                   </div>
                   <div class="swiper-slide">
@@ -180,10 +229,17 @@
                       </p>
                     </div>
                     <div class="slide__img">
-                      <img
-                        src="./src/images/christmas-hat.png"
-                        alt="christmas hat"
-                      />
+                      <picture>
+                        <source
+                          srcset="/src/images/christmas-hat.webp"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="/src/images/christmas-hat.png"
+                          type="image/png"
+                        />
+                        <img src="/src/images/christmas-hat.png" alt="christmas hat information"/>
+                      </picture>
                     </div>
                   </div>
                   <div class="swiper-slide">
@@ -198,10 +254,17 @@
                       </p>
                     </div>
                     <div class="slide__img">
-                      <img
-                        src="./src/images/new-year-bag.png"
-                        alt="new year bag"
-                      />
+                      <picture>
+                        <source
+                          srcset="/src/images/new-year-bag.webp"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="/src/images/new-year-bag.png"
+                          type="image/png"
+                        />
+                        <img src="/src/images/new-year-bag.png" alt="new year bag information"/>
+                      </picture>
                     </div>
                   </div>
                 </div>
