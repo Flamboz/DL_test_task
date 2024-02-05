@@ -1,5 +1,6 @@
 .contact {
-  background: url("../src/images/contact_background.webp") center no-repeat;
+  background: url("../src/images/contact_background-updated.jpg") center
+    no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
