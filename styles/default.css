@@ -21,6 +21,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .disable-slider {
   overflow: unset;
 }
@@ -49,7 +53,8 @@ body {
   z-index: 1;
 }
 
-.big-snowflake img {
+.big-snowflake img,
+.big-snowflake source {
   width: 447px;
   height: 448px;
   transform: rotate(-10deg);
