@@ -1,13 +1,16 @@
 import "./presents-slider.js";
-// import "./snow-animation.js";
 import "./header.js";
 import "./custom-dropdown.js";
 import "./adjustTextareaHeight.js";
-import "./hero-stars.js";
+import { initSnowAnimation } from "./snow-animation.js";
+import { initStarsAnimation } from "./hero-stars.js";
 import { checkIsMobile } from "./checkIsMobile.js";
 import { handleUpdateHeaderBgOnScroll } from "./header.js";
 
 document.addEventListener("DOMContentLoaded", function () {
+  initSnowAnimation();
+  initStarsAnimation()
+
   const arrowToSecondSlide = document.querySelector(".hero__arrow");
   let pageSlider;
 
